@@ -48,19 +48,61 @@
   var yearEl = document.getElementById('year');
   if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
 
-  // Contact form (client-side demo handling, no backend)
+  // Contact form: compose an email to BMD Learning via the visitor's mail app
   var form = document.getElementById('contact-form');
   if (form) {
+    var RECIPIENT = 'david@frontandcentre.com';
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+
+      // Native browser validation for required fields
+      if (typeof form.reportValidity === 'function' && !form.reportValidity()) {
+        return;
+      }
+
+      var val = function (id) {
+        var el = form.querySelector('#' + id);
+        return el && el.value ? el.value.trim() : '';
+      };
+
+      var name = val('name');
+      var org = val('organisation');
+      var email = val('email');
+      var phone = val('phone');
+      var interest = val('interest');
+      var message = val('message');
+
+      var subject = 'Website enquiry from ' + (name || 'a visitor') +
+        (org ? ' (' + org + ')' : '');
+
+      var lines = [
+        'Name: ' + name,
+        'Organisation: ' + (org || '-'),
+        'Email: ' + email,
+        'Phone: ' + (phone || '-'),
+        'Interested in: ' + (interest || '-'),
+        '',
+        'Message:',
+        message,
+        '',
+        '-- Sent from the BMD Learning website contact form'
+      ];
+
+      var href = 'mailto:' + RECIPIENT +
+        '?subject=' + encodeURIComponent(subject) +
+        '&body=' + encodeURIComponent(lines.join('\n'));
+
+      window.location.href = href;
+
       var status = document.getElementById('form-status');
-      var name = (form.querySelector('#name') || {}).value || 'there';
       if (status) {
-        status.textContent = 'Thank you, ' + name.split(' ')[0] +
-          '. Your enquiry has been received. A member of the BMD Learning team will be in touch shortly.';
+        status.innerHTML = 'Thanks, ' + (name ? name.split(' ')[0] : 'there') +
+          '. Your email app should now open with your enquiry ready to send. ' +
+          'If nothing happens, email us directly at ' +
+          '<a href="mailto:' + RECIPIENT + '">' + RECIPIENT + '</a>.';
         status.classList.add('show', 'ok');
       }
-      form.reset();
     });
   }
 })();
