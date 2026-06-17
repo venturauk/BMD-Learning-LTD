@@ -44,10 +44,11 @@ python3 -m http.server 8000
 
 ## Notes
 
-- The contact form is wired up client-side for demonstration (no backend). To make
-  it live, point the `<form>` at a form handler (e.g. Netlify Forms, Formspree) or
-  your own endpoint.
+- The contact form is a HubSpot embedded form (EU region, portal `144888725`,
+  form `f8a9b017-3f34-4eff-885b-b4d25455083a`), loaded via HubSpot's `v2.js`
+  embed on `contact.html` and styled to match the brand in `css/styles.css`
+  (`.hs-embed` rules). Submissions and notifications are managed in HubSpot.
 - Fonts load from Google Fonts with a system-font fallback, so the site still
   renders cleanly offline.
-- The placeholder contact email (`info@bmdlearning.com`) should be
-  replaced with a real address before launch.
+- The displayed contact email is `info@bmdlearning.com`; make sure that mailbox
+  exists and the HubSpot form notification goes there.

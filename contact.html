@@ -42,50 +42,12 @@
     <section class="section section--tight">
       <div class="container">
         <div class="grid grid--2" style="gap:48px;align-items:start;">
-          <!-- Form -->
+          <!-- Form (HubSpot) -->
           <div class="card reveal" style="padding:36px;">
             <h3>Send us an enquiry</h3>
             <p style="color:var(--muted);margin-bottom:22px;">We aim to respond within one working day.</p>
-            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
-            <form id="contact-form" class="form" novalidate>
-              <div class="form__row">
-                <div class="field">
-                  <label for="name">Full name</label>
-                  <input type="text" id="name" name="name" required autocomplete="name">
-                </div>
-                <div class="field">
-                  <label for="organisation">Organisation</label>
-                  <input type="text" id="organisation" name="organisation" autocomplete="organization">
-                </div>
-              </div>
-              <div class="form__row">
-                <div class="field">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required autocomplete="email">
-                </div>
-                <div class="field">
-                  <label for="phone">Phone (optional)</label>
-                  <input type="tel" id="phone" name="phone" autocomplete="tel">
-                </div>
-              </div>
-              <div class="field">
-                <label for="interest">What can we help with?</label>
-                <select id="interest" name="interest">
-                  <option value="">Please select…</option>
-                  <option>Learning &amp; Development</option>
-                  <option>Consultancy</option>
-                  <option>Coaching</option>
-                  <option>Assessment &amp; Insight</option>
-                  <option>Not sure yet</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="message">Your message</label>
-                <textarea id="message" name="message" required placeholder="Tell us a little about your organisation and what you'd like to achieve…"></textarea>
-              </div>
-              <button type="submit" class="btn btn--primary">Send enquiry <span class="arrow">→</span></button>
-              <p class="form__note">By submitting this form you agree to be contacted about your enquiry. We'll never share your details.</p>
-            </form>
+            <div id="hubspot-form" class="hs-embed"></div>
+            <noscript>Please enable JavaScript to use the enquiry form, or email us at <a href="mailto:info@bmdlearning.com">info@bmdlearning.com</a>.</noscript>
           </div>
 
           <!-- Details -->
@@ -136,5 +98,17 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <!-- HubSpot enquiry form -->
+  <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
+  <script>
+    if (window.hbspt) {
+      hbspt.forms.create({
+        region: "eu1",
+        portalId: "144888725",
+        formId: "f8a9b017-3f34-4eff-885b-b4d25455083a",
+        target: "#hubspot-form"
+      });
+    }
+  </script>
 </body>
 </html>
