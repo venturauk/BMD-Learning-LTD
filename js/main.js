@@ -51,7 +51,7 @@
   // Contact form: compose an email to BMD Learning via the visitor's mail app
   var form = document.getElementById('contact-form');
   if (form) {
-    var RECIPIENT = 'david@frontandcentre.com';
+    var RECIPIENT = 'info@bmdlearning.com';
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();

@@ -49,5 +49,5 @@ python3 -m http.server 8000
   your own endpoint.
 - Fonts load from Google Fonts with a system-font fallback, so the site still
   renders cleanly offline.
-- The placeholder contact email (`hello@bmdlearning.co.uk`) should be
+- The placeholder contact email (`info@bmdlearning.com`) should be
   replaced with a real address before launch.
