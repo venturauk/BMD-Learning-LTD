@@ -44,10 +44,13 @@ python3 -m http.server 8000
 
 ## Notes
 
-- The contact form is a HubSpot embedded form (EU region, portal `144888725`,
-  form `f8a9b017-3f34-4eff-885b-b4d25455083a`), loaded via HubSpot's `v2.js`
-  embed on `contact.html` and styled to match the brand in `css/styles.css`
-  (`.hs-embed` rules). Submissions and notifications are managed in HubSpot.
+- The contact form keeps the site's own markup/styling and submits to HubSpot's
+  Forms API (`js/main.js`): EU region, portal `144888725`, form
+  `f8a9b017-3f34-4eff-885b-b4d25455083a`. Fields map to the HubSpot contact
+  properties `firstname`, `lastname`, `email`, `phone`, `message` and the
+  dropdown `what_are_you_interested_in_hearing_more_about_` (options: Speaking,
+  Training & Development, Coaching, Consultancy). Notifications are managed in
+  HubSpot.
 - Fonts load from Google Fonts with a system-font fallback, so the site still
   renders cleanly offline.
 - The displayed contact email is `info@bmdlearning.com`; make sure that mailbox
