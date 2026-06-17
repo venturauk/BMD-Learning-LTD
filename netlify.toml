@@ -1,0 +1,13 @@
+# Netlify configuration for BMD Learning Ltd
+# Static site served directly from the repository root — no build step required.
+
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

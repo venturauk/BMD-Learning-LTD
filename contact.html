@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — BMD Learning Ltd</title>
+  <meta name="description" content="Start a conversation with BMD Learning Ltd. Tell us what you're trying to achieve and we'll help you design the right approach.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="nav__logo" aria-label="BMD Learning home"><img src="assets/logo.svg" alt="BMD Learning"></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="approach.html">Approach</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li class="nav__cta"><a href="contact.html" class="btn btn--primary">Start a conversation</a></li>
+        </ul>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+        <span class="eyebrow">Contact us</span>
+        <h1>Let's start a conversation.</h1>
+        <p class="lead">Tell us what you're trying to achieve and we'll help you design the right approach — practical, tailored and built to last.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <div class="grid grid--2" style="gap:48px;align-items:start;">
+          <!-- Form -->
+          <div class="card reveal" style="padding:36px;">
+            <h3>Send us an enquiry</h3>
+            <p style="color:var(--muted);margin-bottom:22px;">We aim to respond within one working day.</p>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            <form id="contact-form" class="form" novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="organisation">Organisation</label>
+                  <input type="text" id="organisation" name="organisation" autocomplete="organization">
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+                <div class="field">
+                  <label for="phone">Phone (optional)</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel">
+                </div>
+              </div>
+              <div class="field">
+                <label for="interest">What can we help with?</label>
+                <select id="interest" name="interest">
+                  <option value="">Please select…</option>
+                  <option>Learning &amp; Development</option>
+                  <option>Consultancy</option>
+                  <option>Coaching</option>
+                  <option>Assessment &amp; Insight</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" required placeholder="Tell us a little about your organisation and what you'd like to achieve…"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Send enquiry <span class="arrow">→</span></button>
+              <p class="form__note">By submitting this form you agree to be contacted about your enquiry. We'll never share your details.</p>
+            </form>
+          </div>
+
+          <!-- Details -->
+          <div class="reveal">
+            <div class="info-card">
+              <span class="feature__dot">✉</span>
+              <div><h4>Email</h4><a href="mailto:hello@bmdlearning.co.uk">hello@bmdlearning.co.uk</a></div>
+            </div>
+            <div class="info-card">
+              <span class="feature__dot">☎</span>
+              <div><h4>Phone</h4><a href="tel:+441234567890">+44 (0)1234 567 890</a></div>
+            </div>
+            <div class="info-card">
+              <span class="feature__dot">⌚</span>
+              <div><h4>Hours</h4><p>Monday – Friday, 9:00 – 17:30</p></div>
+            </div>
+            <div class="info-card">
+              <span class="feature__dot">⚲</span>
+              <div><h4>Where we work</h4><p>Across the UK, on-site and online.</p></div>
+            </div>
+
+            <div class="card" style="margin-top:14px;">
+              <span class="card__tag">How we'll help</span>
+              <h3 style="margin-top:6px;">What happens next</h3>
+              <ul>
+                <li>We'll get in touch to understand your goals</li>
+                <li>We'll recommend a practical, tailored approach</li>
+                <li>No obligation, no off-the-shelf solutions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="assets/logo.svg" alt="BMD Learning" class="footer__logo">
+          <p>Helping people and organisations perform better through practical learning, expert consultancy and professional coaching.</p>
+        </div>
+        <div class="footer"><h4>Explore</h4><ul><li><a href="about.html">About us</a></li><li><a href="services.html">Services</a></li><li><a href="approach.html">Our approach</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer"><h4>Services</h4><ul><li><a href="services.html#learning">Learning &amp; Development</a></li><li><a href="services.html#consultancy">Consultancy</a></li><li><a href="services.html#coaching">Coaching</a></li><li><a href="services.html#assessment">Assessment &amp; Insight</a></li></ul></div>
+        <div class="footer"><h4>Get in touch</h4><ul><li><a href="mailto:hello@bmdlearning.co.uk">hello@bmdlearning.co.uk</a></li><li><a href="tel:+441234567890">+44 (0)1234 567 890</a></li><li><a href="contact.html">Enquiry form</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> BMD Learning Ltd. All rights reserved.</span>
+        <span class="footer__bmd"><b>BMD</b> = Behaviour · Mindset · Development</span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
