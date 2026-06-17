@@ -1,4 +1,4 @@
-/* BMD Learning Ltd — site interactions */
+/* BMD Learning site interactions */
 (function () {
   'use strict';
 
@@ -48,7 +48,7 @@
   var yearEl = document.getElementById('year');
   if (yearEl) { yearEl.textContent = new Date().getFullYear(); }
 
-  // Contact form (client-side demo handling — no backend)
+  // Contact form (client-side demo handling, no backend)
   var form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', function (e) {
@@ -57,7 +57,7 @@
       var name = (form.querySelector('#name') || {}).value || 'there';
       if (status) {
         status.textContent = 'Thank you, ' + name.split(' ')[0] +
-          '. Your enquiry has been received — a member of the BMD Learning team will be in touch shortly.';
+          '. Your enquiry has been received. A member of the BMD Learning team will be in touch shortly.';
         status.classList.add('show', 'ok');
       }
       form.reset();

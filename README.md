@@ -1,13 +1,13 @@
-# BMD Learning Ltd — Website
+# BMD Learning Website
 
-Marketing website for **BMD Learning Ltd** — a training, consultancy and coaching
+Marketing website for **BMD Learning**, a training, consultancy and coaching
 company helping people and organisations perform better.
 
 **BMD = Behaviour · Mindset · Development**
 
 ## Stack
 
-A fast, dependency-free static site — plain HTML, CSS and a small amount of
+A fast, dependency-free static site built with plain HTML, CSS and a small amount of
 vanilla JavaScript. No build step, no framework. It deploys to any static host
 (Netlify, Vercel, GitHub Pages, etc.) by serving the repository root.
 
@@ -15,11 +15,11 @@ vanilla JavaScript. No build step, no framework. It deploys to any static host
 
 | File | Page |
 | --- | --- |
-| `index.html` | Home — hero, who we are, services overview, approach, sectors |
-| `about.html` | About — meaning of BMD, purpose/mission/vision, personality, sectors |
-| `services.html` | Services — Learning & Development, Consultancy, Coaching, Assessment & Insight |
-| `approach.html` | Approach — Understand → Design → Deliver → Embed → Evaluate |
-| `contact.html` | Contact — enquiry form and contact details |
+| `index.html` | Home: hero, who we are, services overview, approach, sectors |
+| `about.html` | About: meaning of BMD, purpose/mission/vision, personality, sectors |
+| `services.html` | Services: Learning & Development, Consultancy, Coaching, Assessment & Insight |
+| `approach.html` | Approach: Understand, Design, Deliver, Embed, Evaluate |
+| `contact.html` | Contact: enquiry form and contact details |
 
 ## Structure
 
@@ -35,7 +35,7 @@ vanilla JavaScript. No build step, no framework. It deploys to any static host
 
 ## Run locally
 
-It's a static site, so just open `index.html` — or serve it:
+It's a static site, so just open `index.html`, or serve it:
 
 ```bash
 python3 -m http.server 8000
@@ -49,5 +49,5 @@ python3 -m http.server 8000
   your own endpoint.
 - Fonts load from Google Fonts with a system-font fallback, so the site still
   renders cleanly offline.
-- Placeholder contact details (`hello@bmdlearning.co.uk`, phone number) should be
-  replaced with real details before launch.
+- The placeholder contact email (`hello@bmdlearning.co.uk`) should be
+  replaced with a real address before launch.

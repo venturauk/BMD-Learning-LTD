@@ -1,4 +1,4 @@
-# BMD Learning Ltd — Brand Guidelines
+# BMD Learning Brand Guidelines
 
 > Helping People and Organisations Perform Better
 
@@ -6,9 +6,9 @@
 
 ## 1. The name
 
-**BMD Learning Ltd**
+**BMD Learning**
 
-**BMD** stands for **Behaviour · Mindset · Development** — the three forces that
+**BMD** stands for **Behaviour · Mindset · Development**: the three forces that
 shape how people and organisations perform, and the focus of everything we do.
 
 | Letter | Stands for | Meaning |
@@ -21,24 +21,24 @@ shape how people and organisations perform, and the focus of everything we do.
 
 ## 2. Positioning
 
-> BMD Learning Ltd helps organisations improve performance through practical
+> BMD Learning helps organisations improve performance through practical
 > learning, expert consultancy and professional coaching. We develop people,
 > strengthen teams and support organisations in achieving meaningful and
 > sustainable results.
 
-- **Purpose** — To help people, teams and organisations achieve their potential through practical learning and development.
-- **Mission** — To design and deliver learning experiences, consultancy services and development programmes that create lasting impact.
-- **Vision** — To be recognised as a trusted partner for organisations seeking meaningful improvement in performance, leadership and capability.
+- **Purpose:** To help people, teams and organisations achieve their potential through practical learning and development.
+- **Mission:** To design and deliver learning experiences, consultancy services and development programmes that create lasting impact.
+- **Vision:** To be recognised as a trusted partner for organisations seeking meaningful improvement in performance, leadership and capability.
 
 ---
 
 ## 3. Logo
 
-- `assets/logo.svg` — primary horizontal lockup (wordmark + ascending bars).
-- `assets/logo-mark.svg` — square app/avatar mark.
-- `assets/favicon.svg` — browser favicon.
+- `assets/logo.svg`: primary horizontal lockup (wordmark plus ascending bars).
+- `assets/logo-mark.svg`: square app/avatar mark.
+- `assets/favicon.svg`: browser favicon.
 
-The three ascending bars represent **Behaviour → Mindset → Development** and the
+The three ascending bars represent Behaviour, Mindset and Development, and the
 upward trajectory of improving performance. Give the logo clear space equal to
 the height of the "B" on all sides. On dark backgrounds, the footer uses a
 white (knocked-out) version of the wordmark.
@@ -63,8 +63,8 @@ white (knocked-out) version of the wordmark.
 
 ## 5. Typography
 
-- **Headings:** Plus Jakarta Sans (600–800)
-- **Body:** Inter (400–600)
+- **Headings:** Plus Jakarta Sans (weights 600 to 800)
+- **Body:** Inter (weights 400 to 600)
 - Fallback stack: `Segoe UI`, system-ui, sans-serif.
 
 Headings are tight and confident (negative letter-spacing); body copy is set at a
